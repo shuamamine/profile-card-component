@@ -1,11 +1,17 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
   background-color: hsl(185, 75%, 39%);
+  width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans",sans-serif;
 }
 .container {
   width: 100%;
@@ -16,11 +22,43 @@ body {
   align-items: center;
   flex-direction: column;
   position: relative;
+  border-radius: 20px;
+}
+.crdimg{
+    width: 100%;
 }
 .crdimg img {
   width: 100%;
+  border-radius: 20px 20px 0 0;
 }
-.img img {
-  position: absolute;
-  border-radius: 50%;
+#a{
+    border-radius: 50%;
+    transform: translateY(-50%);
+    border: 7px white solid;
+}
+.textbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+gap: 25px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.a, .b, .c{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
