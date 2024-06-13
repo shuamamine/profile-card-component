@@ -44,22 +44,30 @@ body {
 .profile{
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     width: 100%;
-    transform: translateY(-157%);
+    transform: translateY(-67%);
 }
 h2{
-  align-items: center;
+  color: hsl(229, 23%, 23%);
+}
+#a{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+#c{
+  font-size: 20px;
+  color: hsl(227, 10%, 46%);
 }
 .city{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  color: hsl(227, 10%, 46%);
 }
 .stats{
-    border-top: 1px solid #000;
+    border-top: 1px solid hsl(227, 10%, 46%,0.4);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,4 +78,12 @@ h2{
 }
 .a, .b, .c{
     text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%)
+}
+#b{
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  font-size: 16px;
 }
