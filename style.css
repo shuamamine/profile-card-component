@@ -16,49 +16,58 @@ body {
 .container {
   width: 100%;
   max-width: 375px;
+  min-height: max-content;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
   border-radius: 20px;
 }
 .crdimg{
     width: 100%;
+    bottom: 0;
 }
 .crdimg img {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
-#a{
-    border-radius: 50%;
+.image{
     transform: translateY(-50%);
-    border: 7px white solid;
+    border-radius: 50%;
+    bottom: 0;
 }
-.textbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-gap: 25px;
+.image img{
+    border-radius: 50%;
+    border: 7px white solid;
 }
 .profile{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 10px;
+    width: 100%;
+    transform: translateY(-157%);
+}
+h2{
+  align-items: center;
+}
+.city{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .stats{
+    border-top: 1px solid #000;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    width: 100%;
+    padding: 1.1rem;
+    transform: translateY(-23%);
 }
 .a, .b, .c{
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
